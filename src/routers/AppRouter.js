@@ -1,13 +1,11 @@
 import React from 'react'
-import { LoginScreen } from '../login/LoginScreen';
-
-
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   
 } from "react-router-dom";
+import { LoginScreen } from '../components/login/LoginScreen';
 import { DashboardRoutes } from './DashboardRoutes';
 
 

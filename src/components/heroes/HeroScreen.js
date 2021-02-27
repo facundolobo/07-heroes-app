@@ -32,7 +32,7 @@ export const HeroScreen = ({history}) => {
         characters
     } = hero;
 
-    console.log(superhero)
+    
 
     return (
         <div className="row mt-5">
