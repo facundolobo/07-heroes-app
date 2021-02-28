@@ -5,6 +5,8 @@ import { types } from '../../types/types';
 
 export const LoginScreen = ({history}) => { //esta en las props del componente
   
+    //obtiene el ultimo lugar q ingreso, si no existe sera a por defecto 
+    const lastPath= localStorage.getItem('lastPath') || '/'; 
     const {user,dispatch} = useContext(AuthContext)
 
     
@@ -16,14 +18,14 @@ export const LoginScreen = ({history}) => { //esta en las props del componente
         // {
         //     name: 'Facundo'
         // }
-
+        
         dispatch( {
             type:types.login,
             payload:{
                      name: 'Facundo'
                     }
         } )
-        history.replace('/');
+        history.replace(lastPath); //enviamos ultima direccion al logearse
     }
 
     
