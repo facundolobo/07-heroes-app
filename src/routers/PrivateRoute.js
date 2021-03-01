@@ -8,7 +8,8 @@ export const PrivateRoute = ({
     ...rest //trae todas las otras propiedades
 }) => {
 
-console.log(rest.location.pathname) //obtenemos la pagina en la que esta actualmente
+//console.log(rest.location.pathname) //obtenemos la pagina en la que esta actualmente
+
 localStorage.setItem('lastPath',rest.location.pathname);
    
     return (
