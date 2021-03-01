@@ -1,6 +1,10 @@
 import { types } from "../types/types";
 
-export const authReducer = (state = [] ,action ) =>{ //cambiamos el estado segun la variable types
+// const state={
+//     name: 'Fernando',
+//     logged:true
+// }
+export const authReducer = (state = {} ,action ) =>{ //cambiamos el estado segun la variable types
 
     switch (action.type) {
 
@@ -15,6 +19,6 @@ export const authReducer = (state = [] ,action ) =>{ //cambiamos el estado segun
             }
     
         default:
-            break;
+            return state;
     }
 }

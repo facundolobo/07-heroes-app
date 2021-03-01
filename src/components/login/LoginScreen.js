@@ -7,6 +7,8 @@ export const LoginScreen = ({history}) => { //esta en las props del componente
   
     //obtiene el ultimo lugar q ingreso, si no existe sera a por defecto 
     const lastPath= localStorage.getItem('lastPath') || '/'; 
+
+    
     const {user,dispatch} = useContext(AuthContext)
 
     
