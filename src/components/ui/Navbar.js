@@ -8,6 +8,10 @@ export const Navbar = () => {
     const {user:{name},dispatch} = useContext(AuthContext)
     const history= useHistory();
     const handleLogout = ()=>{
+
+        //para saber si se preciono
+        //console.log('click logout')
+        
         //1 dispatch sacar nombre.
         dispatch( {
             type:types.logout,

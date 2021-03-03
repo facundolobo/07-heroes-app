@@ -8,7 +8,9 @@ export const HeroScreen = ({history}) => {
     
 
     const hero=useMemo(() => getHeroById(heroeId) , [heroeId])
-    
+
+    //console.log('Hero: ',hero, 'HeroId:' ,heroeId )
+
     if(!hero){ //si quiere ingresar un heroe q no existe por url 
         return <Redirect to="/" /> //retorna a marvel
     }
@@ -23,7 +25,7 @@ export const HeroScreen = ({history}) => {
         }
     }
 
-
+    //desestructuramos lo obtenido de hero
     const {
         superhero,
         publisher,

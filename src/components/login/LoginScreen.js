@@ -6,14 +6,16 @@ import { types } from '../../types/types';
 export const LoginScreen = ({history}) => { //esta en las props del componente
   
     //obtiene el ultimo lugar q ingreso, si no existe sera a por defecto 
-    const lastPath= localStorage.getItem('lastPath') || '/'; 
+    
 
     
-    const {user,dispatch} = useContext(AuthContext)
+    const {dispatch} = useContext(AuthContext)
 
     
 
     const handleLogin=()=>{
+
+        const lastPath = localStorage.getItem('lastPath') || '/'; 
         //history.push('/'); //redirecciono a la pag x defecto  q es marvel
         //history.replace('/'); //reemplazo en la historia que no visito el login
         //console.log('click');

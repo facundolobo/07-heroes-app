@@ -14,7 +14,7 @@ describe('Pruebas en <DashboardRoutes/>', () => {
         }
     }
     test('debe mostrarce correctamente ', () => {
-        const wreapper=mount(
+        const wrapper=mount(
             
             
             <AuthContext.Provider value={contextValue}>
@@ -27,9 +27,9 @@ describe('Pruebas en <DashboardRoutes/>', () => {
             </AuthContext.Provider>
   
         )
-        expect(wreapper).toMatchSnapshot();
+        expect(wrapper).toMatchSnapshot();
         //console.log(wreapper.find('.text-info').find('span').html())
-        expect(wreapper.find('.text-info').text().trim()).toBe('Juanito')
+        expect(wrapper.find('.text-info').text().trim()).toBe('Juanito')
     })
     
 })

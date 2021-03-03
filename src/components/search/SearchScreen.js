@@ -17,23 +17,16 @@ export const SearchScreen = ({history}) => {
     
     const {q = ''}= queryString.parse(location.search); //separamos lo obtenido y desestructuramos el querie Q
     
-
-
-    
-
     //compo imput con useform para rellenar
     const [formValue, handleInputChange]=useForm({
-        searchText: '' //se lo establecemos al valor inicial de formulario
+        searchText: q //se lo establecemos al valor inicial de formulario
 
     });
 
     const {searchText} = formValue;
 
     //filtrado de heroes por nombres 
-    
-
-
-
+ 
 
     const heroesFilteredMemo= useMemo(() => getHeroesBayName(q), [q])
     //useMemo(() => computeExpensiveValue(a, b), [a, b]);

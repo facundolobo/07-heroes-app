@@ -55,7 +55,7 @@ describe('pruebas es <AppRouter/>', () => {
             //console.log(wrapper.html()); //para msotrar si aparece el navbar eso indica q no estamos en login
             expect(wrapper.find('.navbar').exists()).toBe(true);
             
-            console.log(wrapper.html());
+            //console.log(wrapper.html());
             //expect(wrapper).toMatchSnapshot();
     })
     
